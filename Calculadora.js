@@ -11,7 +11,7 @@ class Calculadora {
 
     set resultado(numero) {
         if (typeof numero == 'string') {
-            numero = numero - 0; // converte string para número
+            numero = numero - 0;
         }
         if (isNaN(numero) || typeof numero !== 'number') {
             throw new TypeError("O argumento deve ser um número válido");
